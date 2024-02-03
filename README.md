@@ -1,4 +1,4 @@
-# Yusei In Motion
+# Yusei In Motion 🎥
 うごく yuseiito だよ!!
 
 [yuseiito](https://twitter.com/yuseiito_) のアイコンを音声に応じて動かします。
