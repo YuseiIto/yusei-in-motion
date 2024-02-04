@@ -23,7 +23,7 @@
         <header class="columns">
           <div class="column is-10 is-12-mobile content">
             <h1 class="title">Yusei In Motion! 🎥</h1>
-            <p> [Start]をおすと、声を出している間だけ口が開きます。</p>
+            <p>[Start]をおすと、声を出している間だけ口が開きます。</p>
           </div>
           <div class="column is-2">
             <button
@@ -39,7 +39,6 @@
                 </span>
               </span>
             </button>
-
             <button
               class="button is-danger is-light"
               id="stop-button"
@@ -57,6 +56,12 @@
         </header>
         <div class="pt-5">
           <canvas id="canvas" width="800" height="800"></canvas>
+        </div>
+        <div class="pt-1 has-text-centered">
+          <label class="checkbox">
+            <input type="checkbox" id="chroma-key"/>
+            クロマキーモード
+          </label>
         </div>
       </div>
       <footer>

@@ -83,6 +83,7 @@ const toggleEyes = () => {
 const drawFace = () => {
   requestAnimationFrame(drawFace);
 
+  const chromaKey = document.getElementById("chroma-key");
   const voice = isVoiceDetected();
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
@@ -90,7 +91,8 @@ const drawFace = () => {
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
   };
 
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = chromaKey.checked ? "#00FF00" : "#FFFFFF";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   if (openEyes) {
     drawItem(eyesOpened);
