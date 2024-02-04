@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>Yusei In Motion! 🎥</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button onclick="run()">スタート</button>
-    <canvas id="canvas" width="800" height="800"></canvas>
+    <section class="section" id="primary-section">
+      <div class="container">
+        <header class="primary-header columns">
+          <div class="column is-10 is-12-mobile content">
+            <h1 class="title">Yusei In Motion! 🎥</h1>
+            <p class="subtitle">ゆうせいになってみよう! </p>
+          </div>
+          <div class="column is-2">
+            <button class="button is-primary" id="start-button" onClick="startMouth()">
+              <span class="icon-text">
+                <span>Start</span>
+
+                <span class="icon">
+                  <i class="fas fa-microphone"></i>
+                </span>
+              </span>
+            </button>
+
+            <button class="button is-danger" id="stop-button" onClick="stopMouth()">
+              <span class="icon-text">
+                <span>Stop</span>
+
+                <span class="icon">
+                  <i class="fas fa-microphone-slash"></i>
+                </span>
+              </span>
+            </button>
+          </div>
+        </header>
+        <div class="pt-5">
+          <canvas id="canvas" width="800" height="800"></canvas>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
